@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Splitter for Email Marketing</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Myeongjo|Noto+Sans+KR|Noto+Serif+KR" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <h1>Image Splitter for Email Marketing</h1>
+        <input type="file" id="file">
+    </div>
+    <div class="src">
+        <div class="left">
+            <div id="image" draggable="true"></div>            
+            <!-- <table id="footer"></table> -->
+        </div>
+        <div id="border" draggable="true">
+            <span></span>
+        </div>
+        <pre>
+            <code id="code"></code>
+        </pre>        
+    </div>
+    <div id="input">
+        <div>
+            <form name="frm" method="POST" action="/" target="result">
+                <input type="hidden" id="timestamp" name="timestamp">
+                <input type="hidden" id="html" name="html">
+                <div class="mode">
+                    <div class="text">
+                        <select name="" id="font">
+                            <option value="Nanum Gothic">Nanum Gothic</option>
+                            <option value="Nanum Myeongjo">Nanum Myeongjo</option>
+                            <option value="Noto Sans KR">Noto Sans KR</option>
+                            <option value="Noto Serif KR">Noto Serif KR</option>                                
+                        </select><input type="color" id="color"><button id="bold">B</button><input type="number" id="size" min="1" value="16"><span>px</span>
+                    </div>
+                    <div class="link">
+                        <input type="text" id="inputLink" placeholder="Hyperlink">                            
+                    </div>                  
+                </div>
+                <!-- <div class="footer">
+                    <p>Footer (수신거부)</p>
+                    <input id="none" type="radio" name="footer" checked>
+                    <label for="none">없음</label>                
+                    <input id="kor" type="radio" name="footer">
+                    <label for="kor">국문</label>
+                    <input id="eng" type="radio" name="footer">
+                    <label for="eng">영문</label>
+                </div> -->
+                <div class="email">
+                    <div>
+                        <label for="to">To</label>
+                        <input id="to" type="text" value="" name="to">
+                    </div>
+                    <div>
+                        <label for="subject">Subject</label>
+                        <input id="subject" type="text" value="" name="subject">
+                    </div>
+                </div>                    
+                <button id="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <iframe src="about:blank" name="result" style="display:none"></iframe>
+    <script src="./index.js"></script>
+</body>
+</html>

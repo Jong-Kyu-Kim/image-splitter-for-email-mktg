@@ -1,0 +1,46 @@
+* {padding:0;margin:0;font-size:14px}
+#header {padding:10px 20px;border-bottom:1px solid #ccc}
+#header h1 {display:inline-block;margin-right:30px;font-size:16px}
+.src {overflow: hidden;}
+.src > * {position:absolute;height:calc(100% - 149px);overflow-y:auto}
+.src .left {width:820px;text-align:center}
+.src #border {left:820px;width:10px;cursor:ew-resize}
+.src #border span {display:block;margin:0 auto;width:1px;height:100%;background-color:#ccc}
+.src pre {left:830px;width:calc(100% - 830px);box-sizing:border-box;}
+.src pre code {white-space:pre-wrap}
+.src pre code * {font-size:13px}
+#image {position:relative;margin:0 auto;width:100%;box-sizing:border-box;user-select: none;-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;}
+#image div {position:absolute;box-sizing:border-box;border:1px dashed #666}
+#image div.select {border:1px solid #666}
+#image div textarea {width:100%;height:100%;overflow:hidden;box-sizing:border-box;background-color:transparent;border:none;outline:none;resize:none;font-size:16px;font-family:'Nanum Gothic'}
+#footer {margin:0 auto 20px;max-width:670px;border-collapse: collapse;}
+/* #code {padding:20px;width:100%;height:100%;font-size:12px;box-sizing:border-box;border:0;resize:none;} */
+
+#input {position:fixed;bottom:0;left:0;padding:20px 20px 25px;box-sizing:border-box;width:100%;border-top:1px solid #ccc;background-color:#fff}
+#input > div {position:relative;margin:0 auto;width:780px;overflow: hidden;}
+#input label {display:inline-block;margin-right:5px;}
+#input input[type=text]{margin-right:15px;padding:5px;width:130px;height:10px;vertical-align:top}
+#input fieldset {padding:0 20px 20px}
+#input input[type=radio] {vertical-align:middle}
+#input input[type=radio] + label {margin-right:15px;min-width:0;}                
+#input form > div {float:left;padding-left:20px;height:58px;border-left:1px solid #ccc}
+#input form > div p {margin-bottom:12px;font-size:16px;}
+#input form > .mode {padding-left:0;width:330px;border:0}
+#input form > .mode .text input,
+#input form > .mode .text select {height:25px;vertical-align:middle;}
+#input form > .mode .text select {width:140px;margin-right:10px;}
+#input form > .mode .text #color {-webkit-appearance:none;width:30px;box-sizing:border-box;border:1px solid #ccc;background-color:transparent;cursor:pointer;}
+#input form > .mode .text #color::-webkit-color-swatch-wrapper {padding:0;}
+#input form > .mode .text #color::-webkit-color-swatch {border:none;}        
+#input form > .mode .text #bold {display:inline-block;margin:0 10px;width:30px;height:23px;line-height:23px;vertical-align:middle;text-align:center;font-size:16px;background-color:#eee;border:1px solid #ccc;cursor:pointer}
+#input form > .mode .text #size {margin-right:3px;width:55px;text-align:right;box-sizing:border-box}
+#input form > .mode .text #size::-webkit-outer-spin-button,
+#input form > .mode .text #size::-webkit-inner-spin-button {margin-left:5px}
+#input form > .mode .link input[type=text] {width:270px}        
+#input form > .footer {width:200px;}
+#input form > .email {width:320px;}
+#input form > .email label {width:60px}
+#input form > .email input {width: 215px}
+#input form > div > div:first-child {margin-bottom:8px}
+
+button#btn {position:absolute;top:0;right:0;width:90px;height:56px;line-height:56px;background-color: #fff;border:1px solid #999;cursor:pointer}
