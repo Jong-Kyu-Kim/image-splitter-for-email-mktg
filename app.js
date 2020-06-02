@@ -7,14 +7,12 @@ const http = require('http'),
       nodemailer = require('nodemailer');
       //smtpPool = require('nodemailer-smtp-pool'),
       //Client = require('ftp'),
-      //connect = require('./connect');
-      //morgan = require('morgan');      
+      //connect = require('./connect'); 
 
 const port = parseInt(process.env.PORT, 10) || 3000,
       router = Router(),
       serve = serveStatic('dist'),
       jsonParser = bodyParser.json({limit: '3mb'});
-      //logger = morgan('combined');
 
 router.get('/', (req, res) => {
   res.writeHead(200, {'Content-Type': 'text/html'}); 
