@@ -11,7 +11,7 @@
     "ftp": "^0.3.10",
     "html2canvas": "^1.0.0-alpha.12",
     "js-beautify": "^1.8.9",
-    "nodemailer": "^6.4.8",
+    "nodemailer": "^6.4.16",
     "nodemailer-smtp-pool": "^2.8.3",
     "prismjs": "^1.15.0",
     "rgb-hex": "^2.1.0",
